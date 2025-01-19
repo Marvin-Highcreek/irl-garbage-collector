@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "outDir": "dist",
+      "removeComments": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "baseUrl": "./",
+      "sourceMap": true,
+      "sourceRoot": "/",
+      "alwaysStrict": true, // Ensures that your files are parsed in the ECMAScript strict mode, and emit “use strict” for each source file.
+      "allowUnreachableCode": false, // pick up dead code paths
+      "noImplicitAny": true, // In some cases where no type annotations are present, TypeScript will fall back to a type of any for a variable when it cannot infer the type.
+      "strictNullChecks": true,
+      "noImplicitReturns": true,
+      "noUncheckedIndexedAccess": true, // accessing index must always check for undefined
+      "noUnusedLocals": true,
+      "skipLibCheck": true
+    },
+    "include": ["./**/*.ts"],
+    "exclude": ["node_modules/**/*"]
+  }
+  
